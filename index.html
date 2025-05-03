@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quieres ser mi San Valentín?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">¡Hola, mi amor!</h1>
+        <p class="message">Desde que comenzamoshablar, mi vida se llenó de colores y alegría ¿Quieres tener una cita conmigo?</p>
+        <div class="heart-container">
+            <div class="heart"></div>
+        </div>
+        <div class="buttons">
+            <button id="yesButton">¡Sí!</button>
+            <button id="noButton">No</button>
+        </div>
+    </div>
+
+    <script>
+        const yesButton = document.getElementById('yesButton');
+        const noButton = document.getElementById('noButton');
+
+        yesButton.addEventListener('click', () => {
+            alert('¡Sabía que dirías que sí! Eres la mejor❤️');
+        });
+
+        noButton.addEventListener('mouseover', () => {
+            noButton.style.position = 'absolute';
+            noButton.style.left = `${Math.random() * 80}%`;
+            noButton.style.top = `${Math.random() * 80}%`;
+        });
+    </script>
+</body>
+</html>
